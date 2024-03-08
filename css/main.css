@@ -38,7 +38,6 @@ h2,h3,h4{
     font-size: 1rem;
 }
 
-
 .progress-bar {
     transform: rotate(-90deg);
 }
@@ -46,10 +45,13 @@ h2,h3,h4{
 circle:nth-child(2) {
     stroke: darkblue;
     stroke-dasharray: 283 283;
-    /*stroke-dashoffset: calc(283 - (283 * .3));*/
 }
 
 circle:nth-child(1) {
-    fill: rgba(96, 96, 96, 0.35);
+    fill: rgba(96, 96, 96, 0.1);
 }
 
+.toolstack {
+    display: flex;
+    justify-content: space-around;
+}
