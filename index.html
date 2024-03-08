@@ -5,8 +5,9 @@
     <title>Resume</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-    <main class="main">
+<body class="">
+    <main class="main background-gradient">
+        <section class="container">
         <section class="header">
             <div class="photo">photo</div>
              <div class="card">
@@ -25,14 +26,14 @@
                     <span>Prof</span>
                 </div>
             <div class="profile">
-                <h2>Profile</h2>
+                <h2 class="card__title">Profile</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dignissimos doloremque ea error esse magni nam nesciunt nostrum obcaecati quaerat qui quibusdam reiciendis repellendus, sapiente sit ut veritatis vero voluptates.</p>
             </div>
         </div>
         </section>
         <section class="personal">
             <div class="personal__card">
-                <h2 class="text_size_1dot25rem">Опыт Работы</h2>
+                <h2 class="text_size_1dot25rem card__title">Опыт Работы</h2>
                 <h3 class="text_size_1rem">Prof</h3>
                 <div class="date">
                     <span></span>
@@ -49,32 +50,48 @@
                 </ul>
             </div>
             <div class="personal__card">
-                <h2>ToolStack & Skills</h2>
+                <h2 class="card__title">ToolStack & Skills</h2>
                 <ul class="toolstack">
                     <li class="toolstack__item">
                         <h4>JS</h4>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+
+
+                        <svg class="progress-bar" width="100px" height="100px" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" stroke-width="4"/>
+                            <circle cx="50" cy="50" r="45" stroke="#444" stroke-width="4" fill="none" stroke-dasharray="283 283" stroke-dashoffset="calc(283 - (283 * .55))" />
+                            <image href="./imgs/JS-logo.png" x="35" y="35" width="30px" height="30px" />
+                        </svg>
+
+
                     </li>
                     <li class="toolstack__item">
-                        <h4>HTML&CSS</h4>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <h4>HTML</h4>
+
+                        <svg class="progress-bar" width="100px" height="100px" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" stroke-width="4"/>
+                            <circle cx="50" cy="50" r="45" stroke="#444" stroke-width="4" fill="none" stroke-dasharray="283 283" stroke-dashoffset="calc(283 - (283 * .82))" />
+                            <image href="./imgs/JS-logo.png" x="35" y="35" width="30px" height="30px" />
+                        </svg>
+
+
+
                     </li>
-                    <li class="toolstack__item"></li>
-                    <li class="toolstack__item"></li>
+                    <li class="toolstack__item">
+                        <h4>CSS</h4>
+                        <svg class="progress-bar" width="100px" height="100px" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" stroke-width="4"/>
+                            <circle cx="50" cy="50" r="45" stroke="#444" stroke-width="4" fill="none" stroke-dasharray="283 283" stroke-dashoffset="calc(283 - (283 * .9))" />
+                            <image href="./imgs/JS-logo.png" x="35" y="35" width="30px" height="30px" />
+                        </svg>
+
+                    </li>
+                    <li class="toolstack__item">
+                        <h4>other</h4>
+
+                    </li>
                 </ul>
             </div>
+        </section>
         </section>
     </main>
 
