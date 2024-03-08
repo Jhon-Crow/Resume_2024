@@ -6,6 +6,12 @@
      --card-title-background: #606060;
  }
 
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 h2,h3,h4{
     margin: 0;
     padding: 0;
@@ -13,16 +19,23 @@ h2,h3,h4{
 
 .main{
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-around;
     margin: 0 auto;
     width: 55.18rem;
+    padding: 1rem;
+    gap: .5rem;
 }
 
 .container {
     background-color: var(--container-background);
     border-radius: .9rem;
-    margin: 1rem;
+    margin: 0;
+    padding: 1.2rem 1rem 1rem 1rem;
+}
+
+.background_white {
+    background-color: white;
 }
 
 .background-gradient {
@@ -36,7 +49,16 @@ h2,h3,h4{
     padding: .3rem;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
+    box-sizing: border-box;
+    width: 16rem;
+    text-align: center;
 }
+
+.card-title__line {
+     width: 100%;
+     height: 2px;
+     background-color: var(--card-title-background);
+ }
 
 .progress-bar {
     transform: rotate(-90deg);
@@ -54,4 +76,14 @@ circle:nth-child(1) {
 .toolstack {
     display: flex;
     justify-content: space-around;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
 }
