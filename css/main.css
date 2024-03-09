@@ -20,7 +20,6 @@ h2,h3,h4{
 
 .main{
     display: flex;
-    /*flex-wrap: wrap;*/
     justify-content: space-around;
     margin: 0 auto;
     width: 55.18rem;
@@ -29,10 +28,13 @@ h2,h3,h4{
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     background-color: var(--container-background);
     border-radius: .9rem;
     margin: 0;
     padding: 1.2rem 1rem 1rem 1rem;
+    gap: .5rem;
 }
 
 .background_white {
@@ -44,21 +46,30 @@ h2,h3,h4{
 }
 
 .card__title {
-    color: white;
-    background-color: var(--card-title-background);
     border-radius: .3rem;
     padding: .3rem;
-    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     box-sizing: border-box;
     width: 16rem;
     text-align: center;
 }
 
+.main-font-family{
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0;
+}
+
+._transform-font{
+    transform: scaleY(1.2);
+}
+
+._background-gray {
+    background-color: var(--card-title-background);
+}
+
 .card-title__line {
      width: 100%;
      height: 2px;
-     background-color: var(--card-title-background);
  }
 
 .progress-bar {
@@ -85,7 +96,65 @@ circle:nth-child(1) {
     flex-direction: column;
 }
 
+
 .card-title {
     display: flex;
     align-items: center;
 }
+
+.card_light {
+    background-color: var(--container-background);
+    border-radius: .9rem;
+    margin: 0;
+    padding: .2rem 2rem;
+}
+
+.card-title_light {
+    text-align: left;
+    padding-bottom: 0 ;
+}
+
+.ul_disc {
+    list-style: disc;
+    text-indent: -8px;
+
+}
+
+li::marker {
+    font-size: 1.3rem;
+    vertical-align: baseline;
+}
+
+.personal__card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lastname{
+    font-size: 2rem;
+}
+
+._color-white{
+    color: white;
+}
+
+.name{
+    font-size: 3rem;
+}
+
+.header-text-color {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header{
+    margin: 0 auto 2.3rem auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: .8rem;
+}
+
+
