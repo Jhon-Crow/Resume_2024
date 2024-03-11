@@ -96,10 +96,50 @@ circle:nth-child(1) {
     flex-direction: column;
 }
 
+.soc-item {
+    width: 2.2rem;
+    height: 2rem;
+    box-shadow: 0;
+    transform: scale(1);
+    border-radius: 10rem;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+}
+
+.tg-logo{
+    background-image: url("/imgs/tg.png");
+}
+
+.github-logo{
+    background-image: url("/imgs/github-logo.png");
+    background-position: left;
+    height: 4rem;
+    background-size: 2.2rem;
+}
+
+.codewors-logo{
+    background-image: url("/imgs/codewars-logo.png");
+}
+
+._width-padding{
+    padding: 0 1.7rem 0;
+}
+
+.mail-logo{
+    background-image: url("/imgs/mail.png");
+    background-position: left;
+    height: 4rem;
+}
 
 .card-title {
     display: flex;
     align-items: center;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .card_light {
@@ -117,7 +157,6 @@ circle:nth-child(1) {
 .ul_disc {
     list-style: disc;
     text-indent: -8px;
-
 }
 
 li::marker {
@@ -148,8 +187,7 @@ li::marker {
 }
 
 .header{
-    margin: 0 auto 2.3rem auto;
-
+    margin: 0 auto 2.3rem auto
     display: flex;
     flex-direction: column;
     justify-content: center;
