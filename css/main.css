@@ -7,6 +7,8 @@
     --process-circle: #0000c394;
  }
 
+* { -webkit-print-color-adjust: exact; }
+
 ul{
     margin: 0;
     padding: 0;
@@ -25,8 +27,9 @@ p{
 .main{
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 10% auto;
     width: 55.18rem;
+    height: 70rem;
     padding: 1rem;
     gap: .5rem;
 }
@@ -128,6 +131,13 @@ circle:nth-child(1) {
 
 .codewors-logo{
     background-image: url("/imgs/codewars-logo.png");
+}
+
+.location-logo{
+    background-image: url("/imgs/location-logo.png");
+    background-position: left;
+    height: 4rem;
+    background-size: 2rem;
 }
 
 ._width-padding{
