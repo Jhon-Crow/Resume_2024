@@ -93,8 +93,11 @@ circle:nth-child(1) {
 }
 
 .toolstack {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .profile {
@@ -138,12 +141,13 @@ circle:nth-child(1) {
 .paragraph{
     font-weight: 500;
     font-size: .7rem;
+    padding-bottom: 1rem;
 }
 
 .paragraph-title{
     font-weight: 700;
     font-size: .8rem;
-    padding: 1.7rem 0 .6rem;
+    padding: .5rem 0 .6rem;
 }
 
 .mail-logo{
