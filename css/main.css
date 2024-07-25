@@ -142,7 +142,7 @@ circle:nth-child(1) {
 }
 
 ._width-padding{
-    padding: 1.7rem 1.7rem 4rem;
+    padding: .8rem 1.7rem 4rem;
 }
 
 .expiriens-card{
@@ -241,12 +241,26 @@ li::marker {
 }
 
 .header{
-    margin: 0 auto 2.3rem auto;
+    margin-bottom: 1.3rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
     gap: .8rem;
 }
 
+.header__avatar {
+    /*padding: 1rem;*/
+    background-image: url("/imgs/avatar.png");
+    background-size: 8.9375rem;
+    background-position: center bottom;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 10.9375rem;
+    width: 10.9375rem;
+}
 
+.header__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7rem;
+}
